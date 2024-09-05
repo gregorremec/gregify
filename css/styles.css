@@ -228,7 +228,7 @@ a {
   border: 0;
   cursor: pointer;
   font-size: 1.8rem;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -318,6 +318,7 @@ input {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -679,7 +680,7 @@ input {
 }
 
 .nav__logo {
-  max-width: 300px;
+  max-width: 200px;
   transform: translateX(-15px);
 }
 
@@ -765,9 +766,14 @@ input {
   max-width: 670px;
 }
 
+.block-domain {
+  padding-bottom: 0;
+}
+
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -911,4 +917,14 @@ input {
   .footer__heading {
     font-size: 2rem;
   }
+}
+
+/* quick fixes */
+
+.block-features {
+  padding-bottom: 0;
+}
+
+.block-testimonial {
+  padding-top: 0;
 }
